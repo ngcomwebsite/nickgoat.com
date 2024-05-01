@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nickgoats website</title>
+    <title>NickGoat's Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-UYsd3ECFM8G6jv+se0IOvDP8N2X75Z6V38IOETP9WDLnFu4uz2sJrrKqEj/7zTzkl+4k3OJGEqhcWsXd15PceA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
@@ -17,11 +17,10 @@
             width: 80%;
             margin: 0 auto;
             padding: 20px;
-            text-align: left; /* Align content to the left */
+            text-align: center; /* Center content */
         }
         h1 {
             margin-bottom: 20px;
-            text-align: left; /* Align heading to the left */
         }
         .social-icons {
             margin-top: 50px;
@@ -38,11 +37,10 @@
             transform: scale(1.2);
         }
         .video-container {
-            position: relative;
-            width: 50%; /* Adjust video width to your preference */
+            width: 70%; /* Adjust video width to your preference */
+            margin: 0 auto; /* Center video */
             padding-bottom: 28.125%; /* 16:9 aspect ratio */
             margin-top: 50px;
-            float: left; /* Float video to the left */
         }
         .video-container iframe {
             position: absolute;
@@ -51,11 +49,32 @@
             width: 100%;
             height: 100%;
         }
+        .navbar {
+            background-color: #111; /* Dark background color for navbar */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #555; /* Darker background color on hover */
+        }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
     <div class="container">
-        <h1>NEWEST VIDEO</h1>
+        <h1>Newest Video</h1>
         <div class="video-container">
             <!-- Replace "YOUTUBE_VIDEO_ID" with the ID of your YouTube video -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
@@ -70,3 +89,4 @@
     </div>
 </body>
 </html>
+
